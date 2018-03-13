@@ -56,6 +56,28 @@ class Wallpaper
      */
     private $height;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="file", type="string")
+     */
+    private $file;
+
+    /**
+     * @return string
+     */
+    public function getFile()
+    {
+        return $this->file;
+    }
+
+    /**
+     * @param string $file
+     */
+    public function setFile(string $file)
+    {
+        $this->file = $file;
+    }
 
     /**
      * Get id
