@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="row">
+        {% include '/home/gothrough.html.twig' with {'images' : scifi} %}
+    </div>
+
+    <div class="row">
+
+        {% include '/home/gothrough.html.twig' with {'images' : winter} %}
+
+    </div>
+
+    <div class="row">
+
+        {% include '/home/gothrough.html.twig' with {'images' : summer} %}
+
+    </div>
+
+    <div class="row">
+
+        {% include '/home/gothrough.html.twig' with {'images' : rand_images} %}
+
+    </div>
+
+{% endblock %}

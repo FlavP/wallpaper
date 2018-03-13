@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+
+        <div class="col-sm-6 col-md-4">
+            {% for image in images %}
+            <a href="{{ path('view') }}" class="thumbnail">
+                <img height="300" width="400" src="/images/{{ image }}" alt=".." />
+            </a>
+            {% endfor %}
+        </div>
+
+    </div>
+    {# display navigation #}
+<div class="navigation">
+    {{ knp_pagination_render(images) }}
+</div>
+{% endblock %}
